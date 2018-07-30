@@ -21,3 +21,131 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos
+$ git clone https://github.com/1807July30Java/demo-reference.git
+Cloning into 'demo-reference'...
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos
+$ ls
+1804Apr23Java/  batch-source/  calibrate-meta/     demo-reference/        janus-webapp/  spring-kafka/    training/
+Angular-Team/   caliber/       calibrate-secrets/  gambit-configuration/  java-core/     sql-team/
+aws-messaging/  caliber-meta/  calibrate-webapp/   gambit-meta/           revalution/    tampabaydevops/
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos
+$ mkdir 1807July30Java
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos
+$ mv demo-reference/ 1807July30Java/
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos
+$ ls
+1804Apr23Java/   aws-messaging/  caliber-meta/       calibrate-webapp/      janus-webapp/  spring-kafka/    training/
+1807July30Java/  batch-source/   calibrate-meta/     gambit-configuration/  java-core/     sql-team/
+Angular-Team/    caliber/        calibrate-secrets/  gambit-meta/           revalution/    tampabaydevops/
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos
+$ cd 1807July30Java/
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java
+$ ls
+demo-reference/
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java
+$ cd demo-reference/
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ ls
+README.md
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ ls -A
+.git/  .gitignore  README.md
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ nano HelloWorld.txt
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ ls
+HelloWorld.txt  README.md
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ ls -A
+.git/  .gitignore  HelloWorld.txt  README.md
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        HelloWorld.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ git add HelloWorld.txt
+warning: LF will be replaced by CRLF in HelloWorld.txt.
+The file will have its original line endings in your working directory.
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   HelloWorld.txt
+
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ git commit -m 'adding HelloWorld.txt'
+[master 8717050] adding HelloWorld.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 HelloWorld.txt
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ git pull
+Already up to date.
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 340 bytes | 85.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/1807July30Java/demo-reference.git
+   dd246b8..8717050  master -> master
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+emily@DESKTOP-DS1TAHI MINGW64 /c/GitRepos/1807July30Java/demo-reference (dev)
+$ git push -u origin dev
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/1807July30Java/demo-reference.git
+ * [new branch]      dev -> dev
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+
+
