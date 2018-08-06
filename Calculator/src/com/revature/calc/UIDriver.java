@@ -12,18 +12,19 @@ public class UIDriver extends Calculator{
 		// TODO Auto-generated method stub
 		
 		String input = "10 x 10";
-		System.out.println(calc(10, x, 10));
+		String buddy = "%";
+		System.out.println(calc(42, buddy, 10));
 		
-		//first input
+		//first number input
 		
-		//operator
-		public static char character() {
-			
-			return null;
-			
-		}
+		//operator input
+//		public static char character() {
+//			
+//			return null;
+//			
+//		}
 		
-		//second input
+		//second number input
 	}
 
 }
