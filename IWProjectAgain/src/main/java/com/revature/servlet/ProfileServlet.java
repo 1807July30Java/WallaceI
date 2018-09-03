@@ -63,11 +63,13 @@ public class ProfileServlet extends HttpServlet {
 					List<Invoice> inv = invD.getMyEmpPendingInvoices(emp.getId());
 					try {
 						String invList = om.writeValueAsString(inv);
-						pw.println("invList");
+						pw.println(invList);
 					} catch (JsonProcessingException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
+					
+					
 				}
 				//REQUEST SHIT
 				pw.println("<form class=\"displayDiv\" method=\"post\">");

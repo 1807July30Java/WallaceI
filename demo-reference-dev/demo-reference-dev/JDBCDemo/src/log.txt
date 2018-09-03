@@ -1,0 +1,6 @@
+2018-08-10 13:23:42 INFO  root:41 - retrieved all caves
+2018-08-10 13:23:43 INFO  root:70 - retrieved cave with id 2
+2018-08-10 13:24:59 INFO  root:41 - retrieved all caves
+2018-08-10 13:25:00 INFO  root:70 - retrieved cave with id 2
+2018-08-10 13:25:01 WARN  root:72 - no matching cave found
+2018-08-10 13:25:01 WARN  root:89 - null cave entered
